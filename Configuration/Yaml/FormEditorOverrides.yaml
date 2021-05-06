@@ -31,6 +31,14 @@ TYPO3:
                           enableFormelementSelectionButton: true
                           propertyValidators:
                             10: 'FormElementIdentifierWithinCurlyBracesInclusive'
+                        108:
+                          identifier: 'salutation'
+                          templateName: 'Inspector-SingleSelectEditor'
+                          label: 'Anrede'
+                          propertyPath: 'options.salution'
+                          enableFormelementSelectionButton: true
+                          propertyValidators:
+                            10: 'FormElementIdentifierWithinCurlyBracesInclusive'
                         110:
                           identifier: 'givenName'
                           templateName: 'Inspector-TextEditor'
@@ -91,6 +99,7 @@ TYPO3:
                 predefinedDefaults:
                   options:
                     title: ''
+                    salutation: ''
                     givenName: ''
                     familyName: ''
                     email: ''
@@ -116,6 +125,10 @@ TYPO3:
                     label: 'Title'
                     config:
                       type: 'input'
+                  salutation:
+                    label: 'Salutation'
+                    config:
+                    type: input
                   givenName:
                     label: 'Given name'
                     config:

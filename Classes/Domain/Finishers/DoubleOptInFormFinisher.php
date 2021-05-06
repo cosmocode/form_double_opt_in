@@ -50,6 +50,7 @@ class DoubleOptInFormFinisher extends \TYPO3\CMS\Form\Domain\Finishers\EmailFini
         $pagelanguage = $context->getPropertyFromAspect('language', 'id');
 
         $title = $this->parseOption('title');
+        $salutation = $this->parseOption('salutation');
         $givenName = $this->parseOption('givenName');
         $familyName = $this->parseOption('familyName');
         $email = $this->parseOption('email');
@@ -72,6 +73,9 @@ class DoubleOptInFormFinisher extends \TYPO3\CMS\Form\Domain\Finishers\EmailFini
         $optIn->setPagelanguage($pagelanguage);
         if(!empty($title)) {
             $optIn->setTitle($title);
+        }
+        if(!empty($salutation)) {
+            $optIn->setSalutation($salutation);
         }
         if(!empty($givenName)) {
             $optIn->setGivenName($givenName);

@@ -10,6 +10,9 @@
                 <target>Sprache ID</target>
             </trans-unit>
             <trans-unit id="tx_formdoubleoptin_domain_model_optin.title" approved="yes">
+                <target>Titel</target>
+            </trans-unit>
+            <trans-unit id="tx_formdoubleoptin_domain_model_optin.salutation" approved="yes">
                 <target>Anrede</target>
             </trans-unit>
             <trans-unit id="tx_formdoubleoptin_domain_model_optin.given_name" approved="yes">

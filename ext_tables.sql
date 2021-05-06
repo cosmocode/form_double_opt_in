@@ -14,6 +14,7 @@ CREATE TABLE tx_formdoubleoptin_domain_model_optin (
 
     pagelanguage tinyint(4) DEFAULT '0' NOT NULL,
     title varchar(255) DEFAULT '' NOT NULL,
+    salutation varchar(255) DEFAULT '' NOT NULL,
     given_name varchar(255) DEFAULT '' NOT NULL,
     family_name varchar(255) DEFAULT '' NOT NULL,
     email varchar(255) DEFAULT '' NOT NULL,

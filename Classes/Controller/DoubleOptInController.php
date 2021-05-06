@@ -65,6 +65,7 @@ class DoubleOptInController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionCont
 
                     $language = $optIn->getPagelanguage();
                     $title = $optIn->getTitle();
+                    $salutation = $optIn->getSalutation();
                     $givenName = $optIn->getGivenName();
                     $familyName = $optIn->getFamilyName();
                     $email = $optIn->getEmail();
@@ -85,8 +86,8 @@ class DoubleOptInController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionCont
                     if ($notificationMailSubject) {
                         $mail->subject($notificationMailSubject);
                     }
-                    $mail->text($language .', '. $title .', '. $givenName .', '. $familyName .', '.$email.', '.$company.', '.$customerNumber);
-                    $mail->html($language .'<br />'. $title .'<br />'. $givenName .'<br />'. $familyName .'<br />'.$email.'<br />'.$company.'<br />'.$customerNumber);
+                    $mail->text($language .', '. $title .', '. $salutation .', '. $givenName .', '. $familyName .', '.$email.', '.$company.', '.$customerNumber);
+                    $mail->html($language .'<br />'. $title .'<br />'. $salutation .'<br />'. $givenName .'<br />'. $familyName .'<br />'.$email.'<br />'.$company.'<br />'.$customerNumber);
                     $mail->send();
                 }
 

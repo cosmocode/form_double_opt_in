@@ -29,6 +29,13 @@ class OptIn extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     protected $title = '';
 
     /**
+     * salutation
+     *
+     * @var string
+     */
+    protected $salutation = '';
+    
+    /**
      * givenName
      *
      * @var string
@@ -292,6 +299,22 @@ class OptIn extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     public function setValidationDate(\DateTime $validationDate)
     {
         $this->validationDate = $validationDate;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSalutation(): string
+    {
+        return $this->salutation;
+    }
+
+    /**
+     * @param string $salutation
+     */
+    public function setSalutation(string $salutation): void
+    {
+        $this->salutation = $salutation;
     }
 
 }

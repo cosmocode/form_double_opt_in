@@ -22,6 +22,7 @@ Build your form as usual using the TYPO3 Form Framework backend module. Then add
 
 Available fields in the Opt-In model are:
  + Title
+ + Salutation
  + Given name
  + Last name
  + Email address

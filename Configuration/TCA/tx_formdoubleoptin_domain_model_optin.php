@@ -12,15 +12,15 @@ return [
         'enablecolumns' => [
             'disabled' => 'hidden'
         ],
-        'searchFields' => 'email, title, given_name, family_name, company, customer_number, validation_hash',
+        'searchFields' => 'email, title, salutation, given_name, family_name, company, customer_number, validation_hash',
         'iconfile' => 'EXT:form_double_opt_in/Resources/Public/Icons/PluginDoubleOptIn.svg'
     ],
     'interface' => [
-        'showRecordFieldList' => 'pagelanguage, email, title, given_name, family_name, company, customer_number, validation_hash, validation_date, is_validated'
+        'showRecordFieldList' => 'pagelanguage, email, title, salutation, given_name, family_name, company, customer_number, validation_hash, validation_date, is_validated'
     ],
     'types' => [
         '1' => [
-            'showitem' => 'pagelanguage, email, title, given_name, family_name, company, customer_number, validation_hash, validation_date, is_validated'
+            'showitem' => 'pagelanguage, email, title, salutation, given_name, family_name, company, customer_number, validation_hash, validation_date, is_validated'
         ]
     ],
     'columns' => [
@@ -45,6 +45,15 @@ return [
         'title' => [
             'exclude' => 1,
             'label' => 'LLL:EXT:form_double_opt_in/Resources/Private/Language/locallang.xlf:tx_formdoubleoptin_domain_model_optin.title',
+            'config' => [
+                'type' => 'input',
+                'size' => '30',
+                'readOnly' => 1
+            ]
+        ],
+        'salutation' => [
+            'exclude' => 1,
+            'label' => 'LLL:EXT:form_double_opt_in/Resources/Private/Language/locallang.xlf:tx_formdoubleoptin_domain_model_optin.salutation',
             'config' => [
                 'type' => 'input',
                 'size' => '30',

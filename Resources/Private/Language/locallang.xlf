@@ -12,6 +12,9 @@
             <trans-unit id="tx_formdoubleoptin_domain_model_optin.title">
                 <source>Title</source>
             </trans-unit>
+            <trans-unit id="tx_formdoubleoptin_domain_model_optin.salutation">
+                <source>Salutation</source>
+            </trans-unit>            
             <trans-unit id="tx_formdoubleoptin_domain_model_optin.given_name">
                 <source>Given name</source>
             </trans-unit>
